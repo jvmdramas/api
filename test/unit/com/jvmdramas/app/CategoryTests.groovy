@@ -1,7 +1,5 @@
 package com.jvmdramas.app
 
-
-
 import grails.test.mixin.*
 import org.junit.*
 
@@ -12,6 +10,5 @@ import org.junit.*
 class CategoryTests {
 
     void testSomething() {
-       fail "Implement me"
     }
 }
