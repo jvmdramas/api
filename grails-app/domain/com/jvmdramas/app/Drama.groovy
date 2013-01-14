@@ -9,6 +9,9 @@ class Drama {
     Date lastUpdated
 
     static constraints = {
+      title blank: false, maxSize: 200
+      url blank: false, maxSize: 500, url: true
+      drama blank: false
     }
     static mapping = {
         drama type: 'text'
