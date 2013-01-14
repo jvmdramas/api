@@ -9,6 +9,8 @@ class Drama {
   Date dateCreated
   Date lastUpdated
 
+  static hasMany = [tags: DramaCategory]
+
   static constraints = {
     title blank: false, maxSize: 200
     url blank: false, maxSize: 500, url: true

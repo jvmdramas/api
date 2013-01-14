@@ -1,7 +1,6 @@
 package com.jvmdramas.app
 
-import grails.test.mixin.*
-import org.junit.*
+import grails.test.mixin.TestFor
 
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
@@ -9,7 +8,7 @@ import org.junit.*
 @TestFor(DramaCategory)
 class DramaCategoryTests {
 
-    void testSomething() {
-    }
-    
+  void testSomething() {
+  }
+
 }
