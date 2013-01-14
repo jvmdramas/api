@@ -1,13 +1,19 @@
 package com.jvmdramas.app
 
 class DramaCategory {
-    Date dateCreated
-    Date lastUpdated
+  String name
+  String urlSeo
 
-    String name
-    static hasMany = [childCategories: DramaCategory]
-    static belongsTo = [parentCategory: DramaCategory]
-    
-    static constraints = {
-    }
+  Date dateCreated
+  Date lastUpdated
+
+  static hasMany = [childCategories: DramaCategory]
+  static belongsTo = [parentCategory: DramaCategory]
+
+  static constraints = {
+    name blank: false, maxSize: 100
+    urlSeo blank: false, maxSize: 100
+    dateCreated shared: 'autoTimeStamp'
+    lastUpdated shared: 'autoTimeStamp'
+  }
 }

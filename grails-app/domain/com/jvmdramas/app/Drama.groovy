@@ -14,8 +14,8 @@ class Drama {
     url blank: false, maxSize: 500, url: true
     drama blank: false
     status nullable: false
-    dateCreated nullable: true, display: false
-    lastUpdated nullable: true, display: false
+    dateCreated shared: 'autoTimeStamp'
+    lastUpdated shared: 'autoTimeStamp'
   }
   static mapping = {
     drama type: 'text'
