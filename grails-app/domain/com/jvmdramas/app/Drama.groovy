@@ -5,11 +5,12 @@ class Drama {
   String url
   String drama
   DramaStatus status = DramaStatus.PENDING
+  Date raisedOn
 
   Date dateCreated
   Date lastUpdated
 
-  static hasMany = [tags: DramaCategory]
+  static hasMany = [tags: DramaTag]
 
   static constraints = {
     title blank: false, maxSize: 200

@@ -1,11 +1,12 @@
 package com.jvmdramas.app
 
-class DramaCategory {
+class DramaTag {
   String name
 
   Date dateCreated
   Date lastUpdated
 
+  static belongsTo = [Drama]
   static hasMany = [dramas: Drama]
 
   static constraints = {
