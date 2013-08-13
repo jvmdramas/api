@@ -57,7 +57,6 @@ grails.project.dependency.resolution = {
         compile ':cache:1.1.1'
 
         compile ":spring-security-core:1.2.7.3"
-        compile ":mongodb:1.3.0"
         compile ":codenarc:0.19"
         test ":geb:0.9.0"
         test(":spock:0.7") {
