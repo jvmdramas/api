@@ -6,8 +6,8 @@ class DramaTag {
   Date dateCreated
   Date lastUpdated
 
-  static belongsTo = [Drama]
-  static hasMany = [dramas: Drama]
+  //static belongsTo = [Drama]
+  //static hasMany = [dramas: Drama]
 
   static constraints = {
     name blank: false, maxSize: 100
