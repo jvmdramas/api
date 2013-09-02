@@ -9,5 +9,7 @@ package com.jvmdramas.app
  */
 enum DramaStatus {
   PENDING,
-  APPROVED
+  BANNED,
+  INACTIVE,
+  ACTIVE
 }
